@@ -28,16 +28,21 @@ public class IdadeAlturaMediaPessoas {
 			alturas[i] = sc.nextDouble();
 		}
 
-		double totalAltura = 0;
+		double totalAltura = 0.0;
 		for (int i = 0; i < N; i++) {
 			totalAltura = totalAltura + alturas[i];
 		}
+		double mediaAltura = totalAltura / N;
+		System.out.printf("Altura média: %.2f%n", mediaAltura);
 
-		double mediaAltura = 0;
+		int cont = 0;
 		for (int i = 0; i < N; i++) {
-			mediaAltura = totalAltura / N;
+			if (idades[i] < 16) {
+				cont++;
+			}
 		}
-		System.out.printf("%.2f%n", mediaAltura);
+		double x = (double) cont * 100.0 / N;
+		System.out.printf("Pessoas com menos de 16 anos: %.1f%%%n ", x);
 		sc.close();
 
 	}

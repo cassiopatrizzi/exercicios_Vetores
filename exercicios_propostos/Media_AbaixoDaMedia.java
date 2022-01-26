@@ -3,7 +3,7 @@ package vetor.exercicios_propostos;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Media_AbaixaDaMedia {
+public class Media_AbaixoDaMedia {
 
 	public static void main(String[] args) {
 
